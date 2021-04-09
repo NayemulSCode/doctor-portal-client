@@ -4,3 +4,5 @@ doctor-portal-client repo--
 --work flow---
 step 1: npx create-react-app doctor-portal-client
 2: create Home.js(component) 
+3. create header 
+4. calling Navbar.js and HeaderMain.js inside Header.js
