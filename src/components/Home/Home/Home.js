@@ -1,4 +1,5 @@
 import React from 'react';
+import Appoinment from '../Appoinment/Appoinment';
 import FeatureService from '../FeatureService/FeatureService';
 import Header from '../Header/Header';
 import Services from '../Services/Services';
@@ -9,6 +10,7 @@ const Home = () => {
             <Header />
             <Services />
             <FeatureService />
+            <Appoinment />
         </div>
     );
 };
