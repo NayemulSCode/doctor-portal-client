@@ -1,0 +1,27 @@
+.make-appointment{
+    background-image: url('https://i.postimg.cc/pL7VM6HX/Mask-Group-4.png');
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    height: 420px;
+    background-position: center center;
+}
+.make-appointment::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgb(34, 43, 73);
+    top: 0;
+    opacity: .9;
+}
+.make-appointment img{
+    height: 550px;
+    transform: translateY(-130px);
+}
+.appointmentText{
+    color: #fff;
+    position: relative;
+    
+}
