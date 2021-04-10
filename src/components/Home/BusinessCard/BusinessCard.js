@@ -25,10 +25,12 @@ const infos =[
 
 const BusinessCard = () => {
     return (
-        <section className="row">
-            {
-                infos.map(info => <CardInfo info={info} />)
-            }
+        <section className="d-flex justify-content-center">
+            <div className="row w-75">
+                {
+                    infos.map(info => <CardInfo info={info} />)
+                }
+            </div>
         </section>
     );
 };
