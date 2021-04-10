@@ -1,4 +1,5 @@
 import React from 'react';
+import BusinessCard from '../BusinessCard/BusinessCard';
 import HeaderMain from '../HeaderMain/HeaderMain';
 import Navbar from '../Navbar/Navbar';
 import './Header.css'
@@ -7,6 +8,7 @@ const Header = () => {
         <div className="header-container">
             <Navbar />
             <HeaderMain />
+            <BusinessCard />
         </div>
     );
 };
