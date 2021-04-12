@@ -1,9 +1,18 @@
 import React from 'react';
+import AppointmentList from '../AppointmentList/AppointmentList';
 
-const AppointmentByDate = () => {
+const AppointmentByDate = ({appointments}) => {
     return (
         <div>
-            <h3>Appionment Date</h3>
+            <h2 className="text-brand text-center">Appointments</h2>
+            {
+                appointments.length ?
+                 <AppointmentList appointments={appointments} />
+                :
+                <div className="p-5">
+                    <h4 className="lead text-center">No Appointments for this Date</h4>
+                </div>
+            }
         </div>
     );
 };
