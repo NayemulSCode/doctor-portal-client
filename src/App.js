@@ -12,7 +12,8 @@ import Login from './components/Login/Login';
 import { createContext, useState } from 'react';
 import Dashboard from './components/Dashboard/Dashboard/Dashboard';
 import AllPatients from './components/AllPatients/AllPatients/AllPatients';
-
+import AddDoctor from './components/AddDoctor/AddDoctor';
+import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute'
 export const UserContext = createContext();
 
 function App() {
@@ -24,12 +25,15 @@ function App() {
         <Route path="/appointment">
             <Appointment />
         </Route>
-        <Route path="/dashboard/appointment">
+        <Route path="/dashboard">
             <Dashboard />
         </Route>
-        <Route path="/dashboard/allPatients">
+        <PrivateRoute path="/allPatients">
             <AllPatients />
-        </Route>
+        </PrivateRoute>
+        <Route path="/addDoctor">
+            <AddDoctor />
+          </Route>
         <Route path="/login">
             <Login />
         </Route>
